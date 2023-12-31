@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container .head{
+    display: flex;
+    gap: 20px;
+}
+.container .main{
+    display: flex;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+.head .option img{
+    width: 100px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.head #paper{
+    position: relative;
+    top: -86px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main .you , .comp{
+   padding: 0px 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-family:'Courier New', Courier, monospace;
+}
+
+.result h4{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: rgb(21, 21, 20);
+    color: aliceblue;        
+}
+
+@media screen and (max-width: 568px){
+
+    .container{
+        padding: 0px;
+    }
+    
+    .head .option img{
+        width: 80px;
+        border-radius: 100px;
+        padding: 0px;
+        cursor: pointer;
+    }
+
+    .main .you , .comp{
+        padding: 0px 15px;    
+    }
+
+    .head #paper{
+        position: relative;
+        top: -79px;
+    }
+     
+     .result h4{
+         padding: 10px 15px;
+         font-size: 16px;     
+     }
+}

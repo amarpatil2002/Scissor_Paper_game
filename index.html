@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock_Paper_Scissors Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+           <div class="option"  id="rock"> <img src="./img/rock5.png" alt="Error"></div>
+           <div class="option" id="paper"><img src="./img/paper.png" alt="Error"></div>
+           <div class="option" id="scissors"><img src="./img/scissors.png" alt="Error"></div>
+        </div>
+        <div class="main">
+            <div class="you">
+                <h2 id="your-score">0</h2>
+                <h4>YOU</h4>
+            </div>
+            <div class="comp">
+                <h2 id="comp-score">0</h2>
+                <h4>COMPUTER</h4>
+            </div>
+        </div>
+        <div class="result">
+            <h4 id="message"> Let's Play the game </h4>
+        </div>
+    </div>
+    <style>
+        @media screen and (max-width: 568px){
+
+            .container{
+                padding: 0px;
+            }
+            
+            .head .option img{
+                width: 80px;
+                border-radius: 100px;
+                padding: 0px;
+                cursor: pointer;
+            }
+
+            .main .you , .comp{
+                padding: 0px 15px;    
+            }
+
+            .head #paper{
+                position: relative;
+                top: -79px;
+            }
+             
+             .result h4{
+                 padding: 10px 15px;
+                 font-size: 16px;     
+             }
+        }
+    </style>
+<script src="./script.js"></script>
+</body>
+</html>
